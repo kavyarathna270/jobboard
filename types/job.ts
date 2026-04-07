@@ -1,4 +1,4 @@
-export type JobStatus = 'applied' | 'interview' | 'offer' | 'not selected';
+export type JobStatus = 'applied' | 'interview' | 'offer' | 'rejected';
 
 export type Job = {
     id: string
@@ -8,6 +8,6 @@ export type Job = {
     applied_date: string
     job_url: string
     notes: string
-    createdAt: string
+    created_at: string
 }
 

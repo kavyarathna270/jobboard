@@ -1,11 +1,8 @@
 import { Job } from '@/types/job'
+import { getStats } from '@/lib/utils'
 
 export default function StatsBar({ jobs }: { jobs: Job[] }) {
-  const total = jobs.length
-  const interviews = jobs.filter(j => j.status === 'interview').length
-  const offers = jobs.filter(j => j.status === 'offer').length
-  const rejected = jobs.filter(j => j.status === 'not selected').length
-  const responseRate = total > 0 ? Math.round((interviews + offers) / total * 100) : 0
+  const { total, interviews, offers, rejected, responseRate } = getStats(jobs)
 
   const stats = [
     { label: 'Total Applied', value: total, color: 'bg-blue-50 text-blue-700' },
