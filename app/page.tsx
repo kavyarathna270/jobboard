@@ -24,7 +24,12 @@ export default function Home() {
     setLoading(false)
   }
 
-  useEffect(() => { fetchJobs() }, [])
+  useEffect(() => {
+    const loadJobs = async () => {
+      await fetchJobs()
+    }
+    loadJobs()
+  }, [])
 
   const filteredJobs = jobs
     .filter(j => filter === 'all' || j.status === filter)
