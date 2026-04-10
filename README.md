@@ -3,7 +3,7 @@
 A full-stack job application tracker built to solve a real problem —
 managing the chaos of a job search in one clean interface.
 
-🔗 *Live App:* [your-vercel-url.vercel.app]
+🔗 *Live App:* [Job Board](https://jobboard-6839-2mdrcow93-kavyarathna270s-projects.vercel.app/)
 
 ---
 
@@ -69,3 +69,9 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
 - Email reminders for follow-ups
 - Charts showing application trends over time
 - Export to CSV
+
+
+## Screenshots
+
+![Image2](Images/jobboard-main.png)
+![Image1](Images/add-job.png)
